@@ -1,8 +1,12 @@
 package com.lzz.array;
 
+import java.util.HashMap;
+
 public class Day04 {
 
-
+    /**
+     * 存在重复元素，返回true，否则返回false
+     */
     static boolean  Duplicates(int[] nums){
 
         boolean flag = false;
@@ -20,9 +24,21 @@ public class Day04 {
         return flag;
     }
 
+    static boolean DuplicatesArray(int[] nums){
+
+        HashMap map = new HashMap();
+        for(int num : nums){
+            if(map.containsKey(num)){
+                return true;
+            }
+            map.put(num,null);
+        }
+        return false;
+    }
+
 
     public static void main(String[] args) {
-        int [] nums = {1,2,5,8,7};
-        System.out.println(Duplicates(nums));
+        int [] nums = {1,2,5,8,7,1};
+        System.out.println(DuplicatesArray(nums));
     }
 }

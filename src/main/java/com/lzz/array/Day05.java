@@ -4,6 +4,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Day05 {
+
+
+    /**
+        只出现一次的数字
+     */
     public static int singleNumber(int[] nums) {
 
         for(int i =0; i<nums.length;i++){
