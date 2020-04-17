@@ -35,9 +35,11 @@ public class Day06 {
 
 
     public static void main(String[] args) {
-        int[] nums1 = {1,2,2};
-        int[] nums2 = {4,2,7,6,8};
+        int[] nums1 = {1,2,2,5,4,7,9,6,4};
+        int[] nums2 = {4,2,7,6,8,5,8,4,6,1,7,3,2,5,0};
+        long start_time = System.currentTimeMillis();
         System.out.println(intersect(nums1,nums2).length);
+        System.out.println(+(System.currentTimeMillis()-start_time)/1000+"ms");
 
     }
 }

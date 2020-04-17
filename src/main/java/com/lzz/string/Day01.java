@@ -22,6 +22,8 @@ public class Day01 {
 
     public static void main(String[] args) {
         String s = "lzzhuangl";
+        long start_time = System.currentTimeMillis();
         System.out.println(checkString(s));
+        System.out.println(+(System.currentTimeMillis()-start_time)/1000+"ms");
     }
 }
