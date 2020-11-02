@@ -2,6 +2,12 @@ package com.lzz.string;
 
 public class Day03 {
 
+    /**
+     * 回文字符串
+     * @param s
+     * @return
+     */
+
     static boolean checkHW(String s){
         s = s.replaceAll("[\\p{Punct}\\p{Space}]+", "");
         s = s.toLowerCase();

@@ -1,7 +1,7 @@
 package com.lzz.string;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author lzz
@@ -10,10 +10,5 @@ import java.util.Map;
  */
 public class Day07 {
 
-    public static void main(String[] args) {
 
-       String s = "来电\r\n互联网";
-       String[] strings = s.split("\r\n");
-        System.out.println(strings[1]+"--------------"+strings[0]);
-    }
 }

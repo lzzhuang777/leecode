@@ -56,7 +56,7 @@ public class Day02 {
 
 
     public static void main(String[] args) {
-        int[]  nums = {1,1,2};
-        System.out.println( test(nums));
+        int[]  nums = {7,1,5,3,6,4};
+        System.out.println( bestTest(nums));
     }
 }

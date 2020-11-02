@@ -4,6 +4,8 @@ import java.util.*;
 
 public class Day01 {
 
+
+
     //字符串中的第一个唯一字符
     static int checkString(String s){
 
