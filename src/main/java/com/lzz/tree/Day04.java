@@ -11,30 +11,30 @@ public class Day04 {
      */
 
     public static boolean isValidBST(TreeNode root){
-        boolean left = true;
-        boolean right = true;
-        if(root!=null) {
-            if(root.left!=null){
-                if(root.left.val >= root.val){
-                    return false;
-                }
-                left = isValidBST(root.left);
-            }
-            if (root.right!=null) {
-                if (root.right.val <= root.val) {
-                    return false;
-                }
-                right = isValidBST(root.right);
-            }
-        }
-        if(!left){
-            return false;
-        } else if(!right){
-            return false;
-        }else {
+        return helper(root,null,null);
+    }
+
+    public static boolean helper(TreeNode root,Integer lower,Integer upper){
+
+        if(root==null){
             return true;
         }
+        int val = root.val;
+        if(lower!=null && lower>=val){
+            return false;
+        }
+        if(upper!=null && upper<=val){
+            return false;
+        }
+        if(!helper(root.left,lower,val)){
+            return false;
+        }
+        if(!helper(root.right,val,upper)){
+            return false;
+        }
+        return true;
     }
+    //syncNwfTaskTo3rdApp (第三方通知任务)
 
     public static void main(String[] args) {
         TreeNode left = new TreeNode(5);
