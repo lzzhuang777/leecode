@@ -21,7 +21,7 @@ public class Day01 {
     }
 
     public static void main(String[] args) {
-        String s = "lzzhuangl";
+        String s = "";
         System.out.println(checkString(s));
     }
 }
