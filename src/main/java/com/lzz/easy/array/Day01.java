@@ -31,7 +31,7 @@ public class Day01 {
     }
 
     public static void main(String[] args) {
-        int[]  nums = {1,1,2};
+        int[]  nums = {1,1,2,5,5,6};
         System.out.println( test(nums));
 
     }
